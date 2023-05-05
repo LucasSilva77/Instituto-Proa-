@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+    
+    var numero1 = parseFloat(prompt("Digite o primeiro número:"));
+    var numero2 = parseFloat(prompt("Digite o segundo número:"));
+    var numero3 = parseFloat(prompt("Digite o terceiro número:"));
+    var numero4 = parseFloat(prompt("Digite o quarto número:"));
+
+
+    if (numero1 > 0 && numero1 < 10 && numero2 > 0 && numero2 < 10 && numero3 > 0 && numero3 < 10 && numero4 > 0 && numero4 < 10) {
+ 
+    var media = (numero1 + numero2 + numero3 + numero4) / 4;
+
+    if (media > 5) {
+      alert("Você passou no teste");
+    } 
+    else {
+    alert("Tente novamente");
+    }
+    }else{
+    alert("Digite apenas números entre 0 e 10");
+    } 
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+         
+    var sexo = parseInt(prompt("insira o seu sexo:  (1 para feminino) e (2 para masculino)  "));
+    var altura = parseFloat(prompt("insira a sua altura abaixo (Ex: 1.70)"));
+    var calculo;
+
+    if (sexo == 1) {
+    calculo = 62.1 * altura - 44.7;
+    }
+    else if(sexo == 2) {
+    calculo = 72.7 * altura - 58;
+    }
+    else {
+    alert("Deu erro ai paizão Informa o seu sexo correto")
+    }
+      
+    alert(" o seu peso ideal é:  " +   calculo);
+
+    </script>
+
+</body>
+</html>

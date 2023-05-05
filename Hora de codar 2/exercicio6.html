@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var numero1 = parseInt(prompt("insira o seu primeiro numero aqui: "));
+        var numero2 = parseInt(prompt("insira o seu segundo numero aqui"));
+        var numero3 = parseInt(prompt("insira o seu terceiro numero aqui"));
+        var numero4 = parseInt(prompt("insira o seu quarto numero  aqui"));
+
+
+        //informei que maior sera numero1, caso o numero maior não seja o numero1 ele ira informar algum dos outros abaixo
+
+        var maior = numero1;
+
+        if (numero2 > maior){
+            maior = valor2;
+        }
+        
+        else if (numero3 > maior) {
+            maior = numero3;
+        }
+
+        else if (numero4 > maior) {
+            maior = numero4;
+        }
+
+        document.write("O seu primeiro valor informado foi: " + numero1 + "<br>");
+        document.write("O seu último valor informado foi: " + numero4 + "<br>");
+        document.write("O seu maior valor informado foi: " + maior + "<br>");
+   
+    </script>
+        
+
+</body>
+</html>

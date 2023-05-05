@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        //variavel i é igual a 30
+        //crio a função "contagem" indicando que vai exibir na tela i que tem o valor 30 e vai diminuindo de 1 em 1 com a tag i--;
+        // i--; é a abreviação de i = i - 1
+        // o if indica que quando i for menor que 0 ai ele para o intervalo com o ClearInterval(temporizador)
+        //logo em seguida ele ira exibir um texto escrito EXPLOSÃO!
+        // no final disso iremos dizer que o clearinterval denomidado de temporizador é igual ao intervalo que iniciamos que utiliza
+        // a nossa função contagem de 1 em 1 segundo
+
+
+
+    var i = 30;
+
+    function contagem() {
+    document.write(i + "<br>");
+    i--;
+    if (i < 0) {
+    clearInterval(temporizador);
+    document.write("EXPLOSÃO!");
+    }
+    }
+
+    var temporizador = setInterval(contagem, 1000);
+
+    </script>
+
+</body>
+</html>

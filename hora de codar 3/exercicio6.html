@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+var continuar = true;
+var aprovados = 0;
+
+while (continuar) {
+    var num1 = parseFloat(prompt("Informe a primeira nota"));
+    var num2 = parseFloat(prompt("Informe a segunda nota"));
+    const media = (num1 + num2) / 2;
+
+    if (num1 >= 9.5 && num2 >= 9.5 || media >= 9.5) {
+        aprovados++;
+        alert("Parabens! o aluno foi aprovado e a média final dele é: "  + media);
+    } 
+    else {
+        alert("O aluno foi reprovado pois tirou : " + media);
+    }
+
+    const resposta = prompt("Deseja consultar a nota de outro aluno? (S/N)");
+
+    if (resposta.toUpperCase() !== "S") {
+        continuar = false;
+        alert("Número de alunos aprovados: " + aprovados);
+    }
+}
+
+    </script>
+    
+</body>
+</html>
